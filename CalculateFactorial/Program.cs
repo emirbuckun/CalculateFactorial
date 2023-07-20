@@ -26,6 +26,14 @@
       {
         Console.WriteLine("Overflow exception: " + ex.Message);
       }
+      catch (OutOfMemoryException ex)
+      {
+        Console.WriteLine("OutOfMemoryException exception: " + ex.Message);
+      }
+      catch (TimeoutException ex)
+      {
+        Console.WriteLine("TimeoutException exception: " + ex.Message);
+      }
       catch (Exception ex)
       {
         Console.WriteLine("Exception: " + ex.Message);
